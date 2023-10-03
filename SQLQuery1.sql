@@ -23,5 +23,14 @@ GO
 	superDob datetime,
 
 	constraint FK_SupervisorEmployee Foreign key (sno,superDob)
-	references Employee(eno, dob)
+	references Employee(eno, dob));
+	
+	create table Dependent(
+	dname nvarchar(50) not null,
+	gender bit not null,
+	dob datetime not null,
+	relationship nvarchar(30),
+	primary key(dname),
+	eno int,
+	Foreign key (eno, dob) references Employee(eno, dob)
 	);
