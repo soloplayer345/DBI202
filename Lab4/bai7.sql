@@ -1,0 +1,1 @@
+﻿select proName,proNum from dbo.tblProject where locNum in (select locNum from dbo.tblLocation where locName = N'TP Hồ Chí Minh')

@@ -1,0 +1,1 @@
+select empSSN,empName,dbo.tblDepartment.depNum,depName from dbo.tblDepartment join dbo.tblEmployee on dbo.tblDepartment.depNum=5;

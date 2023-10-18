@@ -1,0 +1,1 @@
+select proNum,proName,depName from dbo.tblProject join dbo.tblDepartment on dbo.tblDepartment.depNum=2 where proNum=2;
