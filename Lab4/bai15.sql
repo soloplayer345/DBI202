@@ -1,0 +1,1 @@
+select COUNT(depName),depRelationship from dbo.tblDependent group by depRelationship

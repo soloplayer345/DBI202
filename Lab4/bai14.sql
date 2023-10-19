@@ -1,0 +1,1 @@
+select count(depName),depSex from dbo.tblDependent group by depSex
